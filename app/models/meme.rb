@@ -1,4 +1,4 @@
-class Meme
+class Meme < ActiveRecord::Base
 
 
 end
