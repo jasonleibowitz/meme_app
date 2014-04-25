@@ -13,9 +13,12 @@ class MemeController < ApplicationController
   end
 
   def create
-    @meme = Meme.new
-
+    @meme = Meme.create(meme_params)
   end
 
+  private
+    def meme_params
+      params.require(:meme).permit(:name, :hipster_level, :outdatedness, :glasses_worn)
+    end
 
 end
