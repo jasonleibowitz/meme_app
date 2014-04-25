@@ -1,0 +1,15 @@
+<%= form_for @meme, url: {action: "create"}    do |f| %>
+	<%= f.label :name%>
+	<%= f.text_field :name%>
+
+	<%= f.label :hipster_level %>
+	<%= f.text_field :hipster_level %>
+
+	<%= f.label :outdatedness => "value",  %>
+	<%= f.text_field :outdated-ness %>
+
+	<%= f.label :glasses_worn %>
+	<%= f.text_field :glasses_word %>
+
+	<%= f.submit "MEME IT BRO" %>
+<% end %>
